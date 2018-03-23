@@ -113,6 +113,7 @@ namespace Examen1
 
         public IEnumerable<IContainer> GetEnumerator()
         {
+            yield return colores;
         }
     }
     public class FigurasContainer : IContainer
@@ -121,7 +122,7 @@ namespace Examen1
 
         public IEnumerable<IContainer> GetEnumerator()
         {
-            
+            yield return figuras;
         }
     }
 
@@ -154,4 +155,3 @@ namespace Examen1
         void Add(T input) { }
     }
 }
-
